@@ -36,6 +36,7 @@ struct MinHeap {
         // Replace root with last element, then call downheap()
         weightArr[0] = weightArr[size - 1];
         size--;
+        //commit comment
 
         return -1; // placeholder
     }
