@@ -33,12 +33,13 @@ struct MinHeap {
     //removing and returning the root node
     int pop(int weightArr[]) {
         // TODO: remove and return smallest index
+        int root = weightArr[0];
         // Replace root with last element, then call downheap()
         weightArr[0] = weightArr[size - 1];
         size--;
         //commit comment
 
-        return -1; // placeholder
+        return root;
     }
 
     void upheap(int pos, int weightArr[]) {
